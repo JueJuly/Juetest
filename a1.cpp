@@ -16,7 +16,7 @@ int max( int a, int b )
      return a+b;
 } 
 
-void main()
+int main()
 {
     int i, j, k ;
     i = 2;
@@ -25,6 +25,8 @@ void main()
     
     cout << "hello world!" << endl;
     printf("%d\n",k);
+    
+    return 0;
     
     
 }

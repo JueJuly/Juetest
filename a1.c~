@@ -23,7 +23,6 @@ void main()
     j = 5;
     k = max(i, j);
     
-    cout << "hello world!" << endl;
     printf("%d\n",k);
     
     

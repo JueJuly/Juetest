@@ -1,0 +1,33 @@
+import Qt 4.7
+Rectangle {
+      id:page
+      width:500; height:200
+      color:"lightgray"
+      
+      Text {
+          id: helloText
+          text: "2015.04.27"
+          y:40
+          anchors.horizontalCenter:page.horizontalCenter
+          font.pointSize:24
+          font.bold:true
+      }
+      
+      Grid {
+           id:colorPicker
+           x:4;
+           anchors.bottom:page.bottom;
+           anchors.bottomMargin:4
+           rows:2;
+           columns:3; spacing:3
+           
+           Cell { CellColor:"red"; onClicked:helloText.color = cellColor }
+           Cell { CellColor:"green"; onClicked:helloText.color = cellColor }
+           Cell { CellColor:"blue"; onClicked:helloText.color = cellColor }
+           Cell { CellColor:"yellow"; onClicked:helloText.color = cellColor }
+           Cell { CellColor:"steelblue"; onClicked:helloText.color = cellColor }
+           Cell { CellColor:"black"; onClicked:helloText.color = cellColor }
+      }
+      
+
+}
